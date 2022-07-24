@@ -172,11 +172,13 @@ img{
     font-size: 26px;
     line-height:1.2;
     text-decoration: none;
+    transition: var(--transition);
 }
 
 .header
 .logo{
     margin-right: 93px;
+    transition: var(--transition);
 }
 
 .logo:hover,.logo:focus {
@@ -185,6 +187,7 @@ img{
 
 .logo-black{
     color: var(--primary-color);
+    transition: var(--transition);
 }
 
 .logo-black:hover, .logo-black:focus{
@@ -197,6 +200,7 @@ img{
     display: flex;
     align-items: center;
     gap: 50px;
+    transition: var(--transition);
 }
 
 .nav-link,
@@ -222,6 +226,7 @@ img{
     justify-content: center;
     gap: 50px;
     margin-left: auto;
+    transition: var(--transition);
 }
 
 .auth-nav .link:hover, .auth-nav .link:focus{
@@ -264,6 +269,7 @@ img{
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition);
 }
 
 .filter-button:hover, .filter-button:focus{
@@ -443,6 +449,7 @@ img{
     color: var(--border-icon);
     background-color: var(--white-color);
     border-radius: 50%;
+    transition: var(--transition);
 
 }
 
@@ -489,6 +496,7 @@ img{
 
 .portfolio-link{
     display: inline-block;
+    transition: var(--transition);
 }
 
 .portfolio-link:hover, 
@@ -513,6 +521,7 @@ img{
     border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--border-icon);
+    transition: var(--transition);
 }
 
 .clients-icons{
@@ -538,6 +547,7 @@ img{
     padding-bottom: 60px;
 
     background:var(--footer-color);
+    transition: var(--transition);
 }
 
 .footer
@@ -557,6 +567,10 @@ img{
     color: var(--primary-color);
 }
 
+.web{
+    transition: var(--transition);
+}
+
 .web:hover, .web:focus{
     color: var(--white-color);
 }
@@ -570,6 +584,7 @@ img{
 
 .logo-white{
     color: var(--white-color);
+    transition: var(--transition);
 }
 
 .logo-white:hover, .logo-white:focus{
@@ -578,19 +593,22 @@ img{
 
 .address-link{
     color: var(--white-color);
+    transition: var(--transition);
 }
 
 .address-link:hover, .address-link:focus {
     color: var(--blue-color);
+    transition: var(--transition);
+}
+
+.address-mail{
+    transition: var(--transition);
 }
 
 .address-mail:hover, .address-mail:focus{
     color: var(--blue-color);
 }
 
-.address-phone:hover, .address-phone:focus{
-    color: var(--blue-color);
-}
 
 /** Footer-social **/
 
@@ -610,6 +628,7 @@ img{
 .footer-social .social-link{
     background-color: var(--footer-bg-icon);
     --color4:var(--white-color);
+    transition: var(--transition);
 }
 
 .footer-social .social-link:hover, 
