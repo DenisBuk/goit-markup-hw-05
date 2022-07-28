@@ -174,13 +174,13 @@ img{
     font-size: 26px;
     line-height:1.2;
     text-decoration: none;
-    transition: var(--transition);
+    transition:color var(--transition);
 }
 
 .header
 .logo{
     margin-right: 93px;
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .logo:hover,.logo:focus {
@@ -189,11 +189,11 @@ img{
 
 .logo-black{
     color: var(--primary-color);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .logo-black:hover, .logo-black:focus{
-    color: var(--blue-color);
+    color:var(--blue-color);
 }
 
 /*site-nav*/
@@ -203,7 +203,7 @@ img{
     display: flex;
     align-items: center;
     gap: 50px;
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .nav-link,
@@ -216,7 +216,7 @@ img{
     padding-bottom: 32px;
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus, .current {
     color: var(--blue-color);
 }
 
@@ -228,7 +228,7 @@ img{
     justify-content: center;
     gap: 50px;
     margin-left: auto;
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .mail-icon{
@@ -247,9 +247,11 @@ img{
 .nav-link:hover::after,
 .nav-link:focus::after,
 .nav-link:active::after,
+.current::after,
 .auth-link:hover::after,
-.auth-link:hover::after,
-.auth-link:hover::after{
+.auth-link:focus::after,
+.auth-link:active::after{
+
     position: absolute;
     content: '';
     width: 100%;
@@ -283,10 +285,11 @@ img{
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: var(--transition);
+    transition: background-color var(--transition), color var(--white-color);
 }
 
-.filter-button:hover, .filter-button:focus{
+.filter-button:hover, .filter-button:focus,
+.filter-active{
     background-color: var(--blue-color);
     color: var(--white-color);
     }
@@ -428,14 +431,10 @@ img{
     width: 100%;
     left: 0;
     bottom: 0;
-    margin: 0;
 
-
-    padding-top: 27px;
-    padding-bottom: 27px;
-
+    padding: 27px;
+    
     font-weight: 700;
-    font-size: 14px;
     line-height: calc(16/14);
     text-align: center;
     text-transform: uppercase;
@@ -494,7 +493,7 @@ img{
     color: var(--border-icon);
     background-color: var(--white-color);
     border-radius: 50%;
-    transition: var(--transition);
+    transition: background-color var(--transition);
 
 }
 
@@ -541,7 +540,7 @@ img{
 
 .portfolio-link{
     display: inline-block;
-    transition: var(--transition);
+    transition: box-shadow var(--transition);
 }
 
 .portfolio-link:hover, 
@@ -572,7 +571,7 @@ img{
     font-size: 18px;
     line-height: calc(28/18);
     padding: 63px 24px;
-    transition: var(--transition);
+    transition: transform var(--transition), opacity var(--transition); 
     
 }
 
@@ -600,7 +599,7 @@ img{
     border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--border-icon);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .clients-icons{
@@ -626,7 +625,7 @@ img{
     padding-bottom: 60px;
 
     background:var(--footer-color);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .footer
@@ -647,7 +646,7 @@ img{
 }
 
 .web{
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .web:hover, .web:focus{
@@ -663,7 +662,7 @@ img{
 
 .logo-white{
     color: var(--white-color);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .logo-white:hover, .logo-white:focus{
@@ -672,16 +671,15 @@ img{
 
 .address-link{
     color: var(--white-color);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .address-link:hover, .address-link:focus {
     color: var(--blue-color);
-    transition: var(--transition);
 }
 
 .address-mail{
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .address-mail:hover, .address-mail:focus{
@@ -707,7 +705,7 @@ img{
 .footer-social .social-link{
     background-color: var(--footer-bg-icon);
     --color4:var(--white-color);
-    transition: var(--transition);
+    transition: background-color var(--transition);
 }
 
 .footer-social .social-link:hover, 
